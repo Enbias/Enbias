@@ -1,0 +1,57 @@
+#container{
+    width:90%;
+    height:90%;
+    display: grid;
+    gap:10px;
+
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "t t t t t"
+    "ml ml ml mr mr"
+    "ml ml ml mr mr"
+    "b b b b b"
+    ;
+    border:1px solid black; 
+    margin: 20px auto;
+}
+
+.middle_right{
+    background-image: url(universitet-nord.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#container >div{
+    border:1px solid #aaa;
+    background-color:rgb(2, 81, 146);
+    border-radius:0;
+
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+
+
+}
+.top {grid-area:t}
+
+.middle_right{grid-area:mr;}
+
+.middle_left{grid-area:ml}
+
+.bottom{grid-area:b;}
+
+
+h1{
+    text-align:center;
+    font-size: 50px;
+}
+
+h3{
+    text-align: center;
+}
+
+body{
+    background-color: #ffa361;
+}
