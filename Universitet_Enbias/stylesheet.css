@@ -12,7 +12,7 @@
     "ml ml ml mr mr"
     "b b b b b"
     ;
-    border:1px solid black; 
+    /*border:1px solid black;*/ 
     margin: 20px auto;
 }
 
@@ -25,8 +25,8 @@
 
 #container >div{
     border:1px solid #aaa;
-    background-color:rgb(2, 81, 146);
-    border-radius:0;
+    background-color: #ffa361;
+    border-radius:25px;
 
     /*display: flex;
     align-items: center;
@@ -53,5 +53,5 @@ h3{
 }
 
 body{
-    background-color: #ffa361;
+    background-color:rgb(2, 81, 146);
 }
