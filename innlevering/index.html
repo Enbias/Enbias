@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datamaskin</title>
+    <link rel = "icon" href = 
+    "logo.png" type = "image/x-icon">
+   
+
+    <style>
+        *
+        body{
+            background-image: url(background.png);
+            background-color: #0B0C10;
+            color:#66FCF1;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .meny {
+            margin:0%;
+            display: flex;
+            justify-content:flex-end;
+            background-color:#0B0C10 ;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+            
+        }
+        a:hover{
+            background-color: #66FCF1;
+            color:#0B0C10;
+        }
+        
+        
+        
+        .meny a{
+            padding: 5px 10px;
+            border: 1px solid #66FCF1;
+            width: 100%;
+            text-align: left;
+            font-size: 25px;
+            text-decoration: none;
+    
+        }
+        a{
+            color: #66FCF1;
+        }
+
+        @media(max-width:700px){
+            .meny {
+                flex-direction: column;
+            }
+            
+        }
+        @media(max-width:700px){
+            #klar{
+                margin-left:4em;
+                margin-right:auto;
+            }
+            
+        }
+        
+        
+        #what,#klar{
+            display: flex;
+            justify-content:space-around;
+        }
+        /**
+        #overskrift{
+            position: absolute;
+            left:20vmax;
+            justify-content: center;
+            text-align: center;
+        }
+        **/
+        #what{
+           font-size:15vmax;
+           height:100px;
+
+        }
+        #er{
+            display: flex;
+            justify-content: center;
+            font-size: 2em;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="meny">
+        
+        
+        <a href="index.html"><img src="logo.png" alt="logoen til nettsiden" width="30" height="30"></a>
+        <a href="ram.html">Ram</a>
+        <a id="hovedkort" href="hovedkort.html">Hovedkort</a>
+        
+         
+    </div>
+    
+    <div id="overskrift">
+        <h1 id="what">WHAT?</h1>
+        <div id="klar">
+        <h2 id="h2">Dette er noen av delene en datamaskin består av</h2>
+        
+        
+        </div>
+        <div id="er">
+            <h1>Er du klar?</h1>
+        </div>
+    </div>
+
+
+    <div>
+        
+
+
+    </div>
+    
+</body>
+</html>
