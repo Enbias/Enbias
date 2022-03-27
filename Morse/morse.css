@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image:
+    linear-gradient(to bottom, rgba(226, 215, 132, 0.5), rgba(0, 1, 2, 0.99)),
+    url('morse1.jpeg') ;
+
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f5f5f5;
+    
+    background-color:rgba(0, 1, 2, 0.99) ;
+    color:#062C30;
+    
+}
+h1{
+    display: flex;
+    justify-content: center;  
+
+
+}
+#overskrift{    
+    width: 50%;
+    height:6vh;
+}
+.heading{
+    background-color: #f5f5f5;
+    height:5.4%;
+    width:50%;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px auto;
+    margin-top: 60px;
+    margin-bottom: 7px;
+}
+#tittel{
+    background-color: #062C30;
+    color: #f5f5f5;
+    font-size: 2.1em;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    padding:8px;
+    
+}
+
+#overskrift{
+    width: 50%;
+}
+.heading{
+    text-decoration: underline;
+}
+.oversatt {
+    border-radius: 10px;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: auto;
+    width:45%;
+    min-width:250px;
+    background-color: #05595B;
+
+
+}
+#video{
+    display: flex;
+    justify-content: center;
+}
+#fakta{
+    font-size: 20px;
+    line-height: 33.10px;
+
+}
+#faktaOverskrift{
+    margin-top: 100px;
+
+}
+a{
+    color:#f5f5f5;
+}
+
+#text{
+    font-size: 30px;
+}
+#herKommer{
+    font-size: 40px;
+}
+
+#text2{
+    font-size: 30px;
+}
+#herKommer2{
+    font-size: 40px;
+}
+
+input[type="text"]{
+
+    background-color : #F5F5F5; 
+  }
+  ::placeholder {
+    color: #062C30;
+    opacity: 0.5; /* Firefox */
+  }
+
+
+@media (max-width: 850px){
+    #fakta{
+        font-size:20px;
+    }
+    .heading{
+        background-color: #fff;
+        height:6%;
+        width:90%;
+    
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+    #overskrift{
+       width:90%;
+    }
+    .oversatt {
+        border-radius: 10px;
+        color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width:80%;
+        min-width:250px;
+        background-color: #05595B;
+    
+    
+    }
+    #tittel{
+
+        background-color: #062C30;
+        color: #fff;
+        font-size: 1em;
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        padding-top: 4px;
+        padding-bottom:4px ;
+        margin:auto;
+        height:7%;  
+        width: 95%;
+        border-radius: 10px;
+        
+    }
+    
+}

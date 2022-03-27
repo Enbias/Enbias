@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="morse.css">
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="tittel">
+        <h1>Morsekodeoversetter</h1>
+    </div>
+    <div id="overskrift" class="heading">
+        <h1>Fra tekst til morse </h1>
+    </div>
+    <div id="hoved" class="oversatt">
+
+        <label for="text"></label>
+        <input type="text" id="text" placeholder="Skriv tekst">
+
+        <div id="herKommer"></div>
+
+        <div id="setning"></div>
+
+    </div>
+
+    <div class="heading">
+        <h1>Fra morse til tekst</h1>
+    </div>
+
+    <div id="historie" class="oversatt">
+        <label for="text2"></label>
+        <input type="text" id="text2" placeholder="Skriv morse">
+
+        <div id="herKommer2"></div>
+
+        <div id="setning2"></div>
+    </div>
+
+    <div id="faktaOverskrift" class="heading">
+        <h1>Fakta om morse</h1>
+    </div>
+    <div id="fakta" class="oversatt">
+        Morsetegn er tegn brukt ved morsetelegrafi, består av prikker og streker (korte og lange signaler) og grupper av
+        slike, atskilt ved mellomrom. Morsealfabetet ble utviklet av Samuel Morse i 1838.
+
+        De lange signalene (strekene) er tre ganger så lange som de korte signalene (prikkene). Mellomrommene mellom
+        prikker og streker i samme tegn er like langt som et kort signal, og de enkelte komplette tegn atskilles med et
+        opphold like langt som et langt signal (én streklengde). Tegngrupper (ord) atskilles ved mellomrom tilsvarende
+        fem prikklengder <a href="https://snl.no/morsetegn">snl.no</a> Under viser en video av en som blinker morse kode
+
+
+
+        <div id="video">
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/rufnWLVQcKg">
+            </iframe>
+        </div>
+    </div>
+    <script src="morse.js">
+
+    </script>
+
+</body>
+
+</html>
