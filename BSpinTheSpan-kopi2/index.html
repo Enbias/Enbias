@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databaser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <h1>Introduksjon til databaser</h1>
+
+    <div id="nybruker">
+        <label for="navn">navn</label>
+        <input type="text" id="navn">
+
+        <label for="etternavn">Etternavn</label>
+        <input type="text" id="etternavn">
+
+
+        <div id="du">Du er i ferd med å oppgi sensitiv informasjon til databasen</div>
+
+        <button id="registrer">
+            Registrer
+        </button>
+    </div>
+    <div id="hoved">
+
+    </div> -->
+    <title>Spinner</title>
+</head>
+<body>
+    <p id="scoreCounter">MONEY: 0</p>
+    <p id="spinsCounter">Spins: 0</p>
+    <p id="timeCounter"></p>
+
+
+<div id="spinnerParent">
+    <button id="spin">SPIN</button>
+    <span id="arrow"></span>
+    <div id="container">
+        <div class="one"><img src="../BSpinTheSpan/Images/bomb2.png" alt="bomb" style="width: 50px; height:50px;"></div>
+        <div class="two">7</div>
+        <div class="three">6</div>
+        <div class="four">5</div>
+        <div class="five">4</div>
+        <div class="six">3</div>
+        <div class="seven">2</div>
+        <div class="eight">1</div>
+    </div>
+    <div id="merk">
+        For at din pengeverdi skal lagres <br> må du skrive inn ditt brukernavn
+    </div>
+    
+    <div id="nybruker">
+        
+    <label for="fornavn">Fornavn</label>
+        <input type="text" id="fornavn">
+        <button id="registrer">Registrer</button>   
+    </div>
+    <div id="slettBruker">
+        
+        <label for="brukernavnSlett">BrukernavnSlett</label>
+            <input type="text" id="brukernavnSlett">
+            <button id="slett">Slett bruker</button>
+        </div>
+
+    
+    <div id="leaderboards" class="hidden">
+         Her kommer leaderboards
+
+    </div>
+    
+
+</div>
+
+<div id="navnet"></div>
+
+
+
+<button id="sjekkLeaderboards">Refresh leaderboards</button><!--
+<button id="toggleLeaderboards">Toggle leaderboards</button> -->
+<button id="info" >Spillintruks</button>
+<p id="score">0</p>
+<button id="buySpins">BUY SPIN FOR 10$</button>
+<button id="upgrade">SPEED UP:10</button>
+<img src="Images/refresh.png" id="refreshimg" alt="refresh-button">
+<!-- <div class="hidden" id="informasjon">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus reprehenderit qui illum distinctio nostrum, veritatis quae non temporibus incidunt, obcaecati nesciunt totam saepe tempore dicta dolores explicabo quis nobis quidem provident assumenda officiis aliquid quia quo. Esse autem, aperiam fugit fuga, in voluptates quia ipsa sequi ut dolorum minus ea.l orem100 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quidem? Nihil quibusdam ducimus rem non placeat veniam molestias architecto numquam illum eius id, et aliquid reprehenderit eaque tenetur eos voluptate repellendus mollitia, quas neque. Voluptas esse temporibus ex autem itaque cupiditate velit cumque recusandae placeat, quaerat nam quam nostrum beatae blanditiis aliquid voluptate labore expedita sint! Dolorem dolore animi consectetur itaque quibusdam eos tempore minima fugiat ut, tenetur doloremque voluptate ducimus illum obcaecati, laborum facere natus enim, ea quo. Eaque, quasi. Earum corrupti quidem ipsam qui soluta nam illo, ratione voluptates laudantium consequuntur nulla non nobis, modi ab maiores doloribus!
+
+</div> -->
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
