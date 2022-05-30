@@ -3,12 +3,18 @@
 
 const firebaseConfig = {
     // Her er konfigurasjonen til databasen. Denne er unik
-        apiKey: "AIzaSyABcHecG_p2rzhzQwHmL_dk12-VB8uXVU8",
-        authDomain: "sjekke.firebaseapp.com",
-        projectId: "sjekke",
-        storageBucket: "sjekke.appspot.com",
-        messagingSenderId: "244016051048",
-        appId: "1:244016051048:web:212402562ad8aa5e875cdd"
+    /* apiKey: "AIzaSyABcHecG_p2rzhzQwHmL_dk12-VB8uXVU8",
+    authDomain: "sjekke.firebaseapp.com",
+    projectId: "sjekke",
+    storageBucket: "sjekke.appspot.com",
+    messagingSenderId: "244016051048",
+    appId: "1:244016051048:web:212402562ad8aa5e875cdd" */
+    apiKey: "AIzaSyArtcs9CrZFvrnjLtu9RdXLh8zdrCNFsYE",
+    authDomain: "sistegang-24413.firebaseapp.com",
+    projectId: "sistegang-24413",
+    storageBucket: "sistegang-24413.appspot.com",
+    messagingSenderId: "754408743746",
+    appId: "1:754408743746:web:bf7787e14aa12fedc45edb"
 };
 
 
@@ -107,7 +113,7 @@ function upgrade() {
         if (spiller.money >= spiller.upgradeCost) {
             spiller.timeSpin -= 250;
             spiller.money -= spiller.upgradeCost;
-            
+
 
             containerEl.style.transition = spiller.timeSpin / 1000 + "s";//Forteller hvor lang tid det tar for hjulet å gå rundt
             /* scoreCounterEl.innerText = `Penger: ${spiller.money}`;
@@ -136,7 +142,7 @@ function buySpin() {
         updateSite()
 
     }
-//Oppdaterer til databasen
+    //Oppdaterer til databasen
     updateDatabase(spiller)
 }
 
@@ -145,7 +151,7 @@ function spinCheck() {
     if (spiller.spins >= 1) {
         spin()
     }
-    else{
+    else {
         console.log("Du har ikke nok penger")
     }
 }
@@ -239,7 +245,7 @@ function lagHentBruker() {
     if (navn != "") {
 
         navnetEl.innerHTML = `Ditt navn er: ${navn} `;//Vi ser brukernavnet på nettsiden
-//Tar et øyeblikksbilde av hvordan databasen
+        //Tar et øyeblikksbilde av hvordan databasen
         db.collection(collectionName).get().then((snapshot) => {
             // Henter ut dokumentene
             let dokumenter = snapshot.docs;
@@ -260,9 +266,9 @@ function lagHentBruker() {
 
                     break
                 } else {
-                    
+
                     console.log("refreshe")
-                    
+
                     ny = true
                 }
             }
@@ -305,9 +311,10 @@ function lagBruker(navn) {
 
 
 
-bodyEl.addEventListener("click", leaderboards)//når noe blir klikket på nettsiden, kjører leaderboards
-bodyEl.addEventListener("mousemove", leaderboards)//når musen beveger seg over body, nettsiden
+/* bodyEl.addEventListener("click", leaderboards)//når noe blir klikket på nettsiden, kjører leaderboards
+bodyEl.addEventListener("mousemove", leaderboards) *///når musen beveger seg over body, nettsiden
 window.addEventListener("load", leaderboards)//når nettsiden laster inn
+sjekkLeaderboardsEl.addEventListener("click",leaderboards)
 
 
 function leaderboards() {

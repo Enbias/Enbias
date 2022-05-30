@@ -130,6 +130,18 @@
     transition: 0.4s;
     box-shadow: 0 0 10px 0 rgb(0, 0, 0);
 }
+#sjekkLeaderboards:hover {
+    border-color: rgb(228, 228, 228);
+    background-color: #cbcbcb;
+    transition: 0.4s;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
+#buySpins:hover {
+    border-color: rgb(228, 228, 228);
+    background-color: #cbcbcb;
+    transition: 0.4s;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+}
 
 
 
@@ -281,13 +293,14 @@ button:active {
 #hoyre div button {
     font-size: 25px;
     margin-right: 10px;
-    margin-left: 10px;
+
 }
 
 #buySpins,
 #btnInfo,
 #registrer,
-#upgrade {
+#upgrade,
+#sjekkLeaderboards {
     background-color: #0073cf;
     z-index: 3;
     border: 10px solid #0073cf;
